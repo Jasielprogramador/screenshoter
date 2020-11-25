@@ -49,7 +49,8 @@ if (!fs.existsSync('public/' + domain)){
 
         }
 
-    let data = Math.round(new Date().getTime() / 1000);
+    // let data = Math.round(new Date().getTime() / 1000);
+    let data = "kaptura"; 
 
     await page.screenshot({path: `public/${domain}/${data}.png`});
 
